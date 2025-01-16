@@ -4,7 +4,7 @@ publishDate: 2020-03-02 00:00:00
 img: /assets/bplogin.png
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
-  A dynamic health screening platform designed to enhance healthcare accessibility and efficiency for users.
+  A dynamic health screening platform designed to enhance healthcare accessibility and efficiency for users. [ https://bp-screening.vercel.app/index.html ]
 tags:
   - UI/UX Design
   - Full-stack Dev

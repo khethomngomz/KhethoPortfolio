@@ -4,7 +4,7 @@ publishDate: 2019-12-01 00:00:00
 img: /assets/eZagahome.png
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
 description: |
-  Built a static website for a fintech company [ https://e-zaga-home.vercel.app/ ]
+  Built a static website for a fintech company. [ https://e-zaga-home.vercel.app/ ]
 tags:
   - Web Dev
   - UI/UX Design
