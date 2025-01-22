@@ -1,7 +1,7 @@
 ---
-title: Vocal Calculator
+title: Voice-Calculator
 publishDate: 2019-10-02 00:00:00
-img: /assets/modern calculator.png
+img: /assets/VoiceCalc.png
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 description: |
   [ https://my-moderncalculator-henna-ten.vercel.app/ ]
