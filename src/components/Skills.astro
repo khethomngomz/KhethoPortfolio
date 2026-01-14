@@ -1,0 +1,66 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Full-Stack Development</h2>
+		<p>I build scalable, high-performance web applications using modern front-end and back-end technologies. My development work spans responsive UI engineering, API-driven architectures, and production-ready systems built with HTML5, CSS3, JavaScript, TypeScript, React, Next.js, Angular, Node.js, and Express. I focus on clean code, performance, accessibility, and real-world usability, ensuring applications are reliable, maintainable, and ready to scale.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="db" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Database Management</h2>
+		<p>I design, manage, and optimise databases that power scalable applications and data-driven platforms. My experience includes working with NoSQL and relational databases such as MongoDB, Firebase, Firestore, SQL, and PostgreSQL. I structure data models for performance and clarity, build secure data pipelines, and integrate databases with APIs and dashboards. I have implemented real-time data storage, filtering, aggregation, and export functionality to support analytics, reporting, and compliance-driven use cases.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="laptop" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Digital Systems Engineering</h2>
+		<p> I architect and implement end-to-end digital systems that connect users, data, and platforms seamlessly. This includes designing workflows for data capture, validation, storage, analytics, and reporting. I have built digital survey platforms, admin dashboards, and internal tools that support real-time data collection and decision-making in live environments. My work bridges technology and impact, ensuring systems are resilient, secure, and aligned with operational and business goals.</p>
+	</div>
+</section>
+
+
+
+
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>

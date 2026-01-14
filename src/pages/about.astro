@@ -1,0 +1,143 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Khetho Mngomezulu" description="About Khetho Mngomezulu">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/khetho3.jpeg"
+					alt="khetho at work"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						  I’m a full-stack developer and digital systems engineer with a strong focus on building scalable, data-driven platforms that solve real-world problems. I work across modern web technologies including React, Node.js, MongoDB, and cloud-based services to design and deploy production-ready applications. My experience spans from responsive front-end development to backend architecture, database design, and system integration. I’ve built digital survey platforms, admin dashboards, and internal tools used in live community outreach and enterprise environments. I value clean code, performance, and usability, and I enjoy working at the intersection of technology, data, and social impact to create systems that are reliable, meaningful, and built to scale.
+
+
+
+
+
+					</p>
+					
+					
+				</div>
+			</section>
+			<section>
+			<!-- 	<h2 class="section-title">Education</h2>
+				<div class="content">
+					<p>Corporis voluptates tenetur laudantium.</p>
+				</div>
+			</section> -->
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<div class="button-group">
+ 
+  <button>HTML5</button>
+  <button>CSS3</button>
+  <button>JavaScript</button>
+	<button>TypeScript</button>
+	<button>C#</button>
+	<button>Node.js</button>
+  <button>Angular</button>
+  <button>Next.js</button>
+  <button>React</button>
+  <button>ASP.NET Core</button>
+  <button>Tailwind CSS</button>
+  <button>Bootstrap5</button>
+  <button>AstroJs</button>
+ 
+  
+</div>
+
+<div class="button-group">
+ 
+  <button>MSSQL</button>
+  <button>PostgreSQL</button>
+  <button>MongoDB</button>
+  <button>Prisma</button>
+  <button>DBeaver</button>
+	<button>Firebase</button>
+</div>
+
+
+
+
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
