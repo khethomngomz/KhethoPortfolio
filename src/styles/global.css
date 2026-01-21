@@ -284,13 +284,7 @@ button:hover {
   border: 1px solid #007bff;
 }
 
-/* Add this temporarily for debugging */
-.hero img {
-    width: 100% !important;
-    max-width: 320px !important;
-    height: auto !important;
-    object-fit: contain !important;
-}
+
 
 /* Force mobile layout */
 @media (max-width: 767px) {
