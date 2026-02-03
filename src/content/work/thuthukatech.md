@@ -1,16 +1,16 @@
 ---
-title: Thuthuka Tech
+title: Brandscapers Blog
 publishDate: 2019-10-02 00:00:00
-img: /assets/thuthukahome.png
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+img: /assets/blog.png
+img_alt: Brandscapers blog home page
 description: |
-  [ https://thuthukatech.vercel.app/ ]
+  [ https://brandscapers-blog-frontend.vercel.app/ ]
 tags:
-  - Next.js
+  - React
 
-  - Typescript
+  - Node.Js
   - Javascript
-  - Tailwind CSS
+  - MongoDD
 ---
 
-Designed a professional website for a tech solutions company, featuring a subscription system for newsletters and a consultation contact form. The platform enables clients to stay updated and easily connect with the business for personalized consultations, enhancing user engagement and accessibility.
+Designed and developed a full-stack blog platform with secure authentication and an admin dashboard for creating and managing posts. The system supports dynamic content publishing, user registration, and real-time updates, providing a scalable foundation for content-driven digital platforms.
