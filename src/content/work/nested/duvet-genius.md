@@ -1,7 +1,7 @@
 ---
 title: Rand Water Digital Survey
 publishDate: 2020-03-04 00:00:00
-img: /assets/digitalsurvey.jpeg
+img: /assets/DbyD.png
 img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
 description: |
   [ https://www.dropbydrop.info/ ]

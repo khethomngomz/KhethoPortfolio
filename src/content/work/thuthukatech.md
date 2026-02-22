@@ -1,7 +1,7 @@
 ---
 title: Brandscapers Blog
 publishDate: 2026-01-30 00:00:00
-img: /assets/blog.png
+img: /assets/BlogHome.png
 img_alt: Brandscapers blog home page
 description: |
   [ https://brandscapers-blog-frontend.vercel.app/ ]
