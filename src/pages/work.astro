@@ -5,12 +5,32 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
+import PortfolioPlaceholder from '../components/PortfolioPlaceholder.astro';
 import Hero from '../components/Hero.astro';
 import Grid from '../components/Grid.astro';
 
 const projects = (await getCollection('work')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
 );
+
+// Create an array with the existing projects plus 2 placeholders with external links
+const displayItems = [
+  ...projects,
+  { 
+    isPlaceholder: true, 
+    title: "ENS AFRICA Foundation", 
+    img: "/public/assets/ENS Foundation.png",
+    href: "https://ens-foundation.vercel.app/",
+    external: true
+  },
+  { 
+    isPlaceholder: true, 
+    title: "External Project 2", 
+    img: "/public/assets/BJBSolutions.png",
+    href: "https://bjb-solutions.vercel.app/",
+    external: true
+  }
+];
 ---
 
 <BaseLayout
@@ -26,9 +46,18 @@ const projects = (await getCollection('work')).sort(
 			/>
 			<Grid variant="offset">
 				{
-					projects.map((project) => (
+					displayItems.map((item) => (
 						<li>
-							<PortfolioPreview project={project} />
+							{item.isPlaceholder ? (
+								<PortfolioPlaceholder 
+									title={item.title}
+									img={item.img}
+									href={item.href}
+									external={item.external}
+								/>
+							) : (
+								<PortfolioPreview project={item} />
+							)}
 						</li>
 					))
 				}
