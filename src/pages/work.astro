@@ -18,8 +18,9 @@ const displayItems = [
   ...projects,
   { 
     isPlaceholder: true, 
-    title: "ENS AFRICA Foundation", 
+    title: "External Project 1", 
     img: "/public/assets/ENS Foundation.png",
+    img_alt: "ens", 
     href: "https://ens-foundation.vercel.app/",
     external: true
   },
@@ -27,7 +28,8 @@ const displayItems = [
     isPlaceholder: true, 
     title: "External Project 2", 
     img: "/public/assets/BJBSolutions.png",
-    href: "https://bjb-solutions.vercel.app/",
+    img_alt: "External project 2 placeholder", 
+    href: "https://ens-foundation.vercel.app/",
     external: true
   }
 ];
@@ -52,6 +54,7 @@ const displayItems = [
 								<PortfolioPlaceholder 
 									title={item.title}
 									img={item.img}
+									img_alt={item.img_alt}
 									href={item.href}
 									external={item.external}
 								/>
